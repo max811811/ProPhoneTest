@@ -23,7 +23,7 @@ export default function App() {
             <Route path="/orders/new" element={<NewOrderPage />}/>
             <Route path="/orders" element={<OrderHistoryPage />}/>
             <Route path="/search" element={<SearchPage />}/>
-            <Route exact path="/:searchdetail" element={<SearchDetailPage />}/>
+            <Route path="/search/detail" element={<SearchDetailPage />}/>
           </Routes>
         </>
         :
