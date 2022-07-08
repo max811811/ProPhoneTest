@@ -17,7 +17,8 @@ export default function SearchPage() {
     const [user, setUser] = useState(getUser())
   
     useEffect(() => {
-      const key = '23664585-b63ea49e0412f4d30e9b28cc8';
+
+      const key = process.env.REACT_APP_PixKey;
       const url = `https://pixabay.com/api/?key=${key}&q=${search}&image_type=photo&pretty=true&safesearch=false&per_page=10`;
       // console.log(url);
       fetch(url)

@@ -16,6 +16,7 @@ export default function SearchDetailPage() {
         <h1>tag1 {tag1}</h1>
         <h1>tag2 {tag2}</h1>
         <h1>tag3 {tag3}</h1>
+        <h1>ICEBOX ITEMS - padding/cosmetic +, </h1>
 
         </>
     )
