@@ -6,6 +6,7 @@ import AuthPage from '../AuthPage/AuthPage';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
 import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
 import SearchPage from '../SearchPage/SearchPage'
+import SearchDetailPage from '../SearchDetailPage/SearchDetailPage'
 import NavBar from '../../components/NavBar/NavBar'
 import './App.css';
 
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/orders/new" element={<NewOrderPage />}/>
             <Route path="/orders" element={<OrderHistoryPage />}/>
             <Route path="/search" element={<SearchPage />}/>
+            <Route exact path="/:searchdetail" element={<SearchDetailPage />}/>
           </Routes>
         </>
         :

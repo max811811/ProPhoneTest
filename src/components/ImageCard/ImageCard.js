@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Link} from 'react-router-dom';
-import NewOrderPage from '../NewOrderPage/NewOrderPage';
+import NewOrderPage from '../../pages/NewOrderPage/NewOrderPage';
 
 export default function ImageCard(image) {
   const photo = image.image.webformatURL;
@@ -8,6 +8,11 @@ export default function ImageCard(image) {
   const downloads = image.image.downloads;
   const [t1, t2, t3] = image.image.tags.split(','); // ARRAY Destruture in 3 tags & Split Data in ARRAY
   
+  const element = React.createElement(
+    'h1',
+    {userId: {user}},
+    {tag1: {t1}}
+  );
 
 
   return (
@@ -16,7 +21,7 @@ export default function ImageCard(image) {
 
       <div className="col-lg-3">
         <div className="card" style={{ width: '18rem' }}>
-          <Link to="/NewOrderPage">
+          <Link to="/SearchDetail" state={element} >
             <img src={photo} className="card-img-top" alt="data" />
           </Link>
           <div className="card-body">

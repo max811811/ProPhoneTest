@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import ImageCard from './ImageCard';
-import ImageSearch from './ImageSearch';
+import ImageCard from '../../components/ImageCard/ImageCard';
+import ImageSearch from '../../components/ImageSearch/ImageSearch';
 import NavBar from '../../components/NavBar/NavBar'
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service'
